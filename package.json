@@ -1,0 +1,25 @@
+{
+  "name": "sistem-maklumat-pelajar",
+  "version": "1.0.0",
+  "description": "Sistem Maklumat Pelajar",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AJU018/Sistem_Maklumat_Pelajar_Kakitangan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AJU018/Sistem_Maklumat_Pelajar_Kakitangan/issues"
+  },
+  "homepage": "https://github.com/AJU018/Sistem_Maklumat_Pelajar_Kakitangan#readme",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}

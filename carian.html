@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carian Pelajar</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Carian Maklumat Pelajar</h1>
+  <nav>
+    <a href="index.html">Utama</a>
+    <a href="daftar.html">Daftar</a>
+    <a href="login.html">Log Masuk</a>
+    <a href="carian.html">Carian</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h2>Senarai Maklumat Pelajar</h2>
+  <p>Tekan butang di bawah untuk mendapatkan data pelajar daripada API.</p>
+
+  <button type="button" onclick="dapatkanData()">Dapatkan Data API</button>
+
+  <p id="status"></p>
+
+  <div id="senaraiPelajar" class="grid"></div>
+</main>
+
+<footer>
+  <p>&copy; 2026 Sistem Maklumat Pelajar</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

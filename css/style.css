@@ -1,0 +1,299 @@
+/* =========================
+   SISTEM MAKLUMAT PELAJAR
+   MODERN PREMIUM UI
+========================= */
+
+:root {
+  --bg: #FFFAF3;
+  --card: #FFF2DB;
+  --accent: #FFE5BF;
+  --primary: #F62440;
+  --primary-dark: #d81b35;
+  --text: #2d2d2d;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, var(--primary), #ff4d67);
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  box-shadow: 0 5px 15px rgba(246, 36, 64, 0.25);
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* HERO */
+.hero {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    var(--bg),
+    var(--card)
+  );
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h2 {
+  font-size: 48px;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 750px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* BUTTON */
+.btn,
+button {
+  margin-top: 25px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 50px;
+  background: var(--primary);
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(246, 36, 64, 0.25);
+}
+
+.btn:hover,
+button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: var(--card);
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px var(--shadow);
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+input {
+  margin-top: 8px;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(246, 36, 64, 0.15);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 18px;
+  border-left: 6px solid var(--primary);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+}
+
+/* SUCCESS MESSAGE */
+.success {
+  margin-top: 15px;
+  padding: 12px;
+  background: #dcfce7;
+  color: #15803d;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* ERROR MESSAGE */
+.error {
+  margin-top: 15px;
+  padding: 12px;
+  background: #fee2e2;
+  color: #b91c1c;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* TABLE (JIKA GUNA) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+table th {
+  background: var(--primary);
+  color: white;
+  padding: 14px;
+}
+
+table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  background: white;
+}
+
+table tr:hover td {
+  background: var(--bg);
+}
+
+/* FOOTER */
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h2 {
+    font-size: 38px;
+  }
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 90%;
+    background: rgba(255,255,255,0.1);
+  }
+
+  .hero {
+    min-height: 60vh;
+    padding: 30px 15px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  button,
+  .btn {
+    width: 100%;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
